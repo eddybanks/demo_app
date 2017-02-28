@@ -1,0 +1,2 @@
+module ParkSummariesHelper
+end

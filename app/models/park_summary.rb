@@ -1,0 +1,2 @@
+class ParkSummary < ApplicationRecord
+end

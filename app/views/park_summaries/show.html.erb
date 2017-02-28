@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Park name:</strong>
+  <%= @park_summary.park_name %>
+</p>
+
+<p>
+  <strong>Park type:</strong>
+  <%= @park_summary.park_type %>
+</p>
+
+<p>
+  <strong>Park service area:</strong>
+  <%= @park_summary.park_service_area %>
+</p>
+
+<p>
+  <strong>Psa manager:</strong>
+  <%= @park_summary.psa_manager %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @park_summary.email %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @park_summary.number %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @park_summary.zipcode %>
+</p>
+
+<p>
+  <strong>Acreage:</strong>
+  <%= @park_summary.acreage %>
+</p>
+
+<p>
+  <strong>Sup dist:</strong>
+  <%= @park_summary.sup_dist %>
+</p>
+
+<p>
+  <strong>Parkid:</strong>
+  <%= @park_summary.parkid %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @park_summary.location %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @park_summary.lat %>
+</p>
+
+<%= link_to 'Edit', edit_park_summary_path(@park_summary) %> |
+<%= link_to 'Back', park_summaries_path %>

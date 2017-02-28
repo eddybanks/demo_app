@@ -1,0 +1,12 @@
+.box-lg {
+  @include box(1%, 10%);
+  text-align: center;
+  h1 {
+    @include font(inherit, 3em);
+  }
+  h3 {
+    margin: 5%;
+    @include font(fira_sans, 1.5em);
+    font-style: italic;
+  }
+}

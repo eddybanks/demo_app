@@ -1,0 +1,66 @@
+// colors
+
+$black: rgba(0,0,0,1);
+$white: rgba(255,255,255,1);
+$grey: rgba(140,140,140,1);
+
+//fonts
+
+$roboto: 'Roboto', sans-serif;
+$open_sans: 'Open Sans', sans-serif;
+$pt_sans: 'PT Sans', sans-serif;
+$open_sans_c: 'Open Sans Condensed', sans-serif;
+$dosis: 'Dosis', sans-serif;
+$crimson_text: 'Crimson Text', serif;
+$nunito: 'Nunito', sans-serif;
+$fira_sans: 'Fira Sans', sans-serif;
+$ubuntu_c: 'Ubuntu Condensed', sans-serif;
+$josefin_slab: 'Josefin Slab', serif;
+$alegreya_sans: 'Alegreya Sans', sans-serif;
+$cinzel: 'Cinzel', serif;
+
+//mixins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin fcolor($color: $black) {
+  color: $color;
+}
+
+@mixin colors($bgcolor: rgba($black, 0.3), $color: $white) {
+  background-color: $bgcolor;
+  @include fcolor($color);
+}
+
+@mixin font($font-family: inherit, $font-size: 1em) {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+@mixin link($font-family: $fira_sans, $font-size: 1.1em, $font-color: $black, $bgcolor: rgba($grey, 0.2), $font-size-lg: 1.2em) {
+  a {
+    @include font($font-family, $font-size);
+    text-decoration: none;
+  }
+  a:link, a:visited {
+    @extend a;
+    @include fcolor($font-color);
+  }
+  a:hover, a:active {
+    @extend a;
+    @include fcolor(darken($font-color, 20%));
+  }
+}
+
+@mixin box($margin: 0%, $padding: 0%, $min-height: 30%, $width: 100%, $border-radius: 0px) {
+  margin: $margin;
+  padding: $padding;
+  min-height: $min-height;
+  width: $width;
+  @include border-radius($border-radius);
+}
