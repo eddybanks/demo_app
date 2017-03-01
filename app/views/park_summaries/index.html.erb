@@ -1,49 +1,37 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Park Summaries</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Park name</th>
-      <th>Park type</th>
-      <th>Park service area</th>
-      <th>Psa manager</th>
-      <th>Email</th>
-      <th>Number</th>
-      <th>Zipcode</th>
-      <th>Acreage</th>
-      <th>Sup dist</th>
-      <th>Parkid</th>
-      <th>Location</th>
-      <th>Lat</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @park_summaries.each do |park_summary| %>
+<section class="index-section" id="park-summaries-index">
+  <table class="table table-striped table-sm table-hover summary-table">
+    <thead class="thead-inverse">
       <tr>
-        <td><%= park_summary.park_name %></td>
-        <td><%= park_summary.park_type %></td>
-        <td><%= park_summary.park_service_area %></td>
-        <td><%= park_summary.psa_manager %></td>
-        <td><%= park_summary.email %></td>
-        <td><%= park_summary.number %></td>
-        <td><%= park_summary.zipcode %></td>
-        <td><%= park_summary.acreage %></td>
-        <td><%= park_summary.sup_dist %></td>
-        <td><%= park_summary.parkid %></td>
-        <td><%= park_summary.location %></td>
-        <td><%= park_summary.lat %></td>
-        <td><%= link_to 'Show', park_summary %></td>
-        <td><%= link_to 'Edit', edit_park_summary_path(park_summary) %></td>
-        <td><%= link_to 'Destroy', park_summary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Park name</th>
+        <th>Park type</th>
+        <th>Park service area</th>
+        <th>Psa manager</th>
+        <th>Email</th>
+        <th>Number</th>
+        <th>Zipcode</th>
+        <th>Acreage</th>
+        <th>Sup dist</th>
+        <th>Parkid</th>
+        <th>Location</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
-
-<%= link_to 'New Park Summary', new_park_summary_path %>
+    <tbody>
+      <% @park_summaries.each do |park_summary| %>
+        <tr>
+          <td><%= park_summary.park_name %></td>
+          <td><%= park_summary.park_type %></td>
+          <td><%= park_summary.park_service_area %></td>
+          <td><%= park_summary.psa_manager %></td>
+          <td><%= park_summary.email %></td>
+          <td><%= park_summary.number %></td>
+          <td><%= park_summary.zipcode %></td>
+          <td><%= park_summary.acreage %></td>
+          <td><%= park_summary.sup_dist %></td>
+          <td><%= park_summary.parkid %></td>
+          <td><%= park_summary.location %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>
