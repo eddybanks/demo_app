@@ -5,23 +5,31 @@
   </button>
   <%= link_to 'Demo App', '#', class: 'navbar-brand' %>
 
-    <div class="collapse navbar-collapse" id="main-nav-content">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <%= link_to 'Summary Tables', '#', class: 'nav-link dropdown-toggle', id: 'summary-dropdown',
-          data: { toggle: 'dropdown'}, aria: { haspopup: 'true', expanded: 'false' } %>
-          <div class="dropdown-menu" aria-labelledby="summary-dropdown">
-            <%= link_to 'Parks', '#', class: 'dropdown-item' %>
-            <%= link_to 'Film Locations', '#', class: 'dropdown-item' %>
-          </div>
-        </li>
+  <div class="collapse navbar-collapse" id="main-nav-content">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <%= link_to 'Summary Tables', '#', class: 'nav-link dropdown-toggle', id: 'summary-dropdown',
+        data: { toggle: 'dropdown'}, aria: { haspopup: 'true', expanded: 'false' } %>
+        <div class="dropdown-menu" aria-labelledby="summary-dropdown">
+          <%= link_to 'Parks', '#', class: 'dropdown-item' %>
+          <%= link_to 'Film Locations', '#', class: 'dropdown-item' %>
+        </div>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Map', '#', class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'GraphiQL', '#', class: 'nav-link' %>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml justify-content-end">
+      <% if user_signed_in? %>
         <li class="nav-item">
-          <%= link_to 'Map', '#', class: 'nav-link' %>
+          <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'nav-link' %>
         </li>
-        <li class="nav-item">
-          <%= link_to 'GraphiQL', '#', class: 'nav-link' %>
-        </li>
-      </ul>
-    </div>
+      <% else %>
+      <% end %>
+    </ul>
+  </div>
 
 </nav>

@@ -25,6 +25,8 @@ gem 'kaminari'
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'rails-assets-tether', '>= 1.3.3', source: 'https://rails-assets.org'
+gem 'font-awesome-rails'
+gem 'ransack', github: 'activerecord-hackery/ransack'
 
 group :development, :test do
   gem 'byebug', platform: :mri
