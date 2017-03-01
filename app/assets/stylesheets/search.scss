@@ -1,0 +1,8 @@
+.table-search-bar {
+  text-align: center;
+  @include box(0, 1%);
+  @include font(inherit, 0.6em);
+  .search-form {
+    text-align: center;
+  }
+}

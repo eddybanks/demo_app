@@ -4,7 +4,8 @@ class ParkSummariesController < ApplicationController
   # GET /park_summaries
   # GET /park_summaries.json
   def index
-    @park_summaries = ParkSummary.order(:park_name).page params[:page]
+    @q = ParkSummary.order(:id).ransack(params[:q])
+    @park_summaries = @q.result(distinct: true).page params[:page]
 
     @page_header = "Recreation & Park Department Park Info Dataset"
   end
