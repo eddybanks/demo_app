@@ -3,4 +3,9 @@
   <% if @page_subheader %>
     <h4 class="page-subheader"><%= @page_subheader %></h4>
   <% end %>
+  <% if notice %>
+    <div id="notice-bar" class="alert" role="alert">
+      <%= notice %>
+    </div>
+  <% end %>
 </header>

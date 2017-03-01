@@ -7,7 +7,6 @@ class ParkSummariesController < ApplicationController
     @park_summaries = ParkSummary.all
 
     @page_header = "Recreation & Park Department Park Info Dataset"
-    @page_subheader = "Just checking this shit out"
   end
 
   # GET /park_summaries/1

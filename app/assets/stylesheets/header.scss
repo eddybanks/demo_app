@@ -8,4 +8,9 @@ header {
     @include font($crimson_text, 1.2em, italic);
     padding: 1%;
   }
+  #notice-bar {
+    @include font($pt_sans, 0.9em, italic);
+    @include colors(rgba($black, 0.1));
+    text-align: left;
+  }
 }

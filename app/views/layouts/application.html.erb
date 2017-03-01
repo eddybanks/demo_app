@@ -10,10 +10,10 @@
 
   <body class="outer-wrapper">
     <%= render 'layouts/nav' %>
-    <div class="inner-wrapper">
-      <% if @page_header.present? %>
-        <%= render 'layouts/header' %>
-      <% end %>
+    <% if @page_header.present? %>
+      <%= render 'layouts/header' %>
+    <% end %>
+    <div class="inner-wrapper container-fluid">
       <%= yield %>
     </div>
     <%= render 'layouts/footer' %>
