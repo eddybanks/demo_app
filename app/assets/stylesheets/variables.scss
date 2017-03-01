@@ -67,3 +67,9 @@ $cinzel: 'Cinzel', serif;
   width: $width;
   @include border-radius($border-radius);
 }
+
+@mixin col($width: inherit, $over-y: auto, $over-x: auto) {
+  width: $width;
+  overflow-y: $over-y;
+  overflow-x: $over-x;
+}
