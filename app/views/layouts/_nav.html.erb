@@ -11,7 +11,7 @@
         <%= link_to 'Summary Tables', '#', class: 'nav-link dropdown-toggle', id: 'summary-dropdown',
         data: { toggle: 'dropdown'}, aria: { haspopup: 'true', expanded: 'false' } %>
         <div class="dropdown-menu" aria-labelledby="summary-dropdown">
-          <%= link_to 'Parks', '#', class: 'dropdown-item' %>
+          <%= link_to 'Parks', park_summaries_path, class: 'dropdown-item' %>
           <%= link_to 'Film Locations', '#', class: 'dropdown-item' %>
         </div>
       </li>

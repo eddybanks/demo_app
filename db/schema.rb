@@ -32,23 +32,6 @@ ActiveRecord::Schema.define(version: 20170228213315) do
     t.datetime "updated_at",        null: false
   end
 
-  create_table "park_tables", force: :cascade do |t|
-    t.string   "park_name"
-    t.string   "park_type"
-    t.string   "park_service_area"
-    t.string   "psa_manager"
-    t.string   "email"
-    t.string   "number"
-    t.string   "zipcode"
-    t.float    "acreage"
-    t.integer  "sup_dist"
-    t.integer  "parkid"
-    t.string   "location"
-    t.string   "lat"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false

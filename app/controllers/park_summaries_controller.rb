@@ -5,6 +5,9 @@ class ParkSummariesController < ApplicationController
   # GET /park_summaries.json
   def index
     @park_summaries = ParkSummary.all
+
+    @page_header = "Recreation & Park Department Park Info Dataset"
+    @page_subheader = "Just checking this shit out"
   end
 
   # GET /park_summaries/1
