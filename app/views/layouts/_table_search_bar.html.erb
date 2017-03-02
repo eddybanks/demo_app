@@ -1,5 +1,8 @@
 <div class="table-search-bar">
   <%= search_form_for @q do |f| %>
     <%= render 'search_form', f: f %>
+    <%= link_to 'Advanced Search', '#table-search-adv',
+    data: { toggle: 'modal' } %>
   <% end %>
+  <%= render 'layouts/table_search_adv' %>
 </div>

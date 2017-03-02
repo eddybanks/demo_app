@@ -1,13 +1,16 @@
 .summary-table {
   display: block;
-  height: 50em;
-  @include font(inherit, 0.7em);
+  height: 42em;
+  @include font($dosis, 0.7em);
   tbody {
     max-height: 40em;
     overflow: auto;
   }
 }
 
+.pagination {
+  @include font(inherit, 0.7em);
+}
 .col2, .col3 {
   @include col(12%, scroll);
 }
