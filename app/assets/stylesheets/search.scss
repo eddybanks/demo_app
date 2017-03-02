@@ -2,7 +2,11 @@
   text-align: center;
   @include box(0, 1%);
   @include font(inherit, 0.6em);
-  .search-form {
-    text-align: center;
+  #search-form .input-group {
+    margin: auto;
+    width: 50%;
+  }
+  .search-options {
+    margin: 2%;
   }
 }

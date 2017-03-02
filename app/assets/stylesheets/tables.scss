@@ -6,6 +6,9 @@
     max-height: 40em;
     overflow: auto;
   }
+  th {
+    @include link(inherit, 1.2em, $grey, $white, none);
+  }
 }
 
 .pagination {

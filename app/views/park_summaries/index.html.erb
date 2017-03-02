@@ -3,18 +3,18 @@
   <table class="table table-striped table-sm table-hover table-responsive summary-table">
     <thead class="thead-inverse">
       <tr>
-        <th class="col1">#</th>
-        <th class="col2">Park name</th>
-        <th class="col3">Park type</th>
-        <th class="col4">Park service area</th>
-        <th class="col5">Psa manager</th>
-        <th class="col6">Email</th>
-        <th class="col7">Number</th>
-        <th class="col8">Zipcode</th>
-        <th class="col9">Acreage</th>
-        <th class="col10">Sup dist</th>
-        <th class="col11">Parkid</th>
-        <th class="col12">Location</th>
+        <th class="col1"><%= sort_link @q, :id, '#' %></th>
+        <th class="col2"><%= sort_link @q, :park_name, 'Park name' %></th>
+        <th class="col3"><%= sort_link @q, :park_type, 'Park type' %></th>
+        <th class="col4"><%= sort_link @q, :park_service_area, 'Park service area' %></th>
+        <th class="col5"><%= sort_link @q, :psa_manager, 'Psa manager' %></th>
+        <th class="col6"><%= sort_link @q, :email, 'Email' %></th>
+        <th class="col7"><%= sort_link @q, :number, 'Number' %></th>
+        <th class="col8"><%= sort_link @q, :zipcode, 'Zipcode' %></th>
+        <th class="col9"><%= sort_link @q, :acreage, 'Acreage' %></th>
+        <th class="col10"><%= sort_link @q, :sup_dist, 'Sup dist' %></th>
+        <th class="col11"><%= sort_link @q, :parkid, 'Parkid' %></th>
+        <th class="col12"><%= sort_link @q, :location, 'Location' %></th>
       </tr>
     </thead>
 
