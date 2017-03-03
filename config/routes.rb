@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root        'home#index'
 
+  get 'map' =>  'home#map'
+
   devise_for :users, controllers: {
     confirmations: 'users/confirmations',
     passwords: 'users/passwords',
