@@ -25,9 +25,9 @@ __You may need to sign up for the website__
 
 __Download the following files and save them into 'db/data':__
 
-_[film_locations.csv](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am)_
+_[film_locations.csv](https://data.sfgov.org/api/views/yitu-d5am/rows.csv?accessType=DOWNLOAD)_
 
-_[recreation_and_park_info.csv](https://data.sfgov.org/Culture-and-Recreation/Recreation-Park-Department-Park-Info-Dataset/z76i-7s65)_
+_[recreation_and_park_info.csv](https://data.sfgov.org/api/views/z76i-7s65/rows.csv?accessType=DOWNLOAD)_
 
 
 * Create the database, run the migrations and seed the data
