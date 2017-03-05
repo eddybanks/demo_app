@@ -1,11 +1,11 @@
-# README
+# Full-Stack Geospatial Querying Demo App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This web application is a demo application that seeks to demonstrate the basic queries and features required in a modern
+web application.
 
 Things you may want to cover:
 
-* Ruby version
+<!-- * Ruby version
 
 * System dependencies
 
@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* ... -->
