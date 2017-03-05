@@ -23,8 +23,9 @@ To set up the application locally, the following steps need to be carried out:
 `mkdir db/data`
 
 Download the following files and save them into 'db/data':
-** [film_locations.csv](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am)
-** [recreation_and_park_info.csv](https://data.sfgov.org/Culture-and-Recreation/Recreation-Park-Department-Park-Info-Dataset/z76i-7s65)
+
+* [film_locations.csv](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am){:target="_blank"}
+* [recreation_and_park_info.csv](https://data.sfgov.org/Culture-and-Recreation/Recreation-Park-Department-Park-Info-Dataset/z76i-7s65){:target="_blank"}
 
 
 * Create the database, run the migrations and seed the data
