@@ -8,9 +8,11 @@ web application.
 To set up the application locally, the following steps need to be carried out:
 
 * Git clone this application
+
 `git clone git@github.com:eddybanks/demo_app.git`
+
 * Install the necessary gems
-  ```bundle install```
+`bundle install`
 * Create the database, run the migrations and seed the data
 * Set up an env file with the required environment variables. In this application, the figaro gem is installed to facilitate easy access to environment variables. Create an config/application.yml file with the required variables or copy a paste the command below into your terminal.
 
