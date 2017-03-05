@@ -19,10 +19,10 @@ CSV.foreach('db/data/recreation_and_park_info.csv', headers: true) do |row|
   parks_hash << row.to_hash
 end
 
-# films_hash = []
-# CSV.foreach('db/data/film_locations.csv', headers: true) do |row|
-#   films_hash << row.to_hash
-# end
+films_hash = []
+CSV.foreach('db/data/film_locations.csv', headers: true) do |row|
+  films_hash << row.to_hash
+end
 
 # businesses_hash = []
 # CSV.foreach('db/data/businesses.csv', headers: true) do |row|
@@ -92,25 +92,25 @@ p_hashes.each{ |h| ParkSummary.pluck(h).uniq }
 # end
 
 ###### film locations data
-#
-# @full_film_location_data = []
-#
-# films_hash.each do |f|
-#   film_loc = FullFilmLocationDatum.find_or_create_by(
-#     title: (x = f['Title']).present? ? x : nil,
-#     release_year: (x = f['Release Year']).present? ? x : nil,
-#     locations: (x = f['Locations']).present? ? x : nil,
-#     fun_facts: (x = f['Fun Facts']).present? ? x : nil,
-#     production_company: (x = f['Production Company']).present? ? x : nil,
-#     distributor: (x = f['Distributor']).present? ? x : nil,
-#     director: (x = f['Director']).present? ? x : nil,
-#     writer: (x = f['Writer']).present? ? x : nil,
-#     actor1: (x = f['Actor 1']).present? ? x : nil,
-#     actor2: (x = f['Actor 2']).present? ? x : nil,
-#     actor3: (x = f['Actor 3']).present? ? x : nil
-#   )
-#   @full_film_location_data << film_loc
-# end
+
+@film_location_summary = []
+
+films_hash.each do |f|
+  film_loc = FilmLocationSummary.find_or_create_by(
+    title: (x = f['Title']).present? ? x : nil,
+    release_year: (x = f['Release Year']).present? ? x : nil,
+    locations: (x = f['Locations']).present? ? x : nil,
+    fun_facts: (x = f['Fun Facts']).present? ? x : nil,
+    production_company: (x = f['Production Company']).present? ? x : nil,
+    distributor: (x = f['Distributor']).present? ? x : nil,
+    director: (x = f['Director']).present? ? x : nil,
+    writer: (x = f['Writer']).present? ? x : nil,
+    actor1: (x = f['Actor 1']).present? ? x : nil,
+    actor2: (x = f['Actor 2']).present? ? x : nil,
+    actor3: (x = f['Actor 3']).present? ? x : nil
+  )
+  @film_location_summary << film_loc
+end
 #
 # @full_film_location_data.each do |f|
 #   film = Film.find_or_create_by(title: f.title)

@@ -7,7 +7,6 @@
 //= require gmaps/google
 //= require_tree .
 
-
-$(document).on('load:turbolinks', function() {
-
+$(document).on('turbolinks:load', function() {
+  gmap();
 })

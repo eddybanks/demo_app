@@ -3,5 +3,6 @@ class HomeController < ApplicationController
   end
 
   def map
+    @page_header = "Main Map"
   end
 end

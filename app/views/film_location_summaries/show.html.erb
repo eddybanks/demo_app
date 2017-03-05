@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @film_location_summary.title %>
+</p>
+
+<p>
+  <strong>Release year:</strong>
+  <%= @film_location_summary.release_year %>
+</p>
+
+<p>
+  <strong>Locations:</strong>
+  <%= @film_location_summary.locations %>
+</p>
+
+<p>
+  <strong>Fun facts:</strong>
+  <%= @film_location_summary.fun_facts %>
+</p>
+
+<p>
+  <strong>Production company:</strong>
+  <%= @film_location_summary.production_company %>
+</p>
+
+<p>
+  <strong>Distributor:</strong>
+  <%= @film_location_summary.distributor %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @film_location_summary.director %>
+</p>
+
+<p>
+  <strong>Writer:</strong>
+  <%= @film_location_summary.writer %>
+</p>
+
+<p>
+  <strong>Actor1:</strong>
+  <%= @film_location_summary.actor1 %>
+</p>
+
+<p>
+  <strong>Actor2:</strong>
+  <%= @film_location_summary.actor2 %>
+</p>
+
+<p>
+  <strong>Actor3:</strong>
+  <%= @film_location_summary.actor3 %>
+</p>
+
+<%= link_to 'Edit', edit_film_location_summary_path(@film_location_summary) %> |
+<%= link_to 'Back', film_location_summaries_path %>

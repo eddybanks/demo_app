@@ -22,17 +22,17 @@
       <% @park_summaries.each do |park_summary| %>
         <tr>
           <th scope="row" class="col1"><%= park_summary.id %></td>
-          <td class="col2"><%= park_summary.park_name %></td>
-          <td class="col3"><%= park_summary.park_type %></td>
-          <td class="col4"><%= park_summary.park_service_area %></td>
-          <td class="col5"><%= park_summary.psa_manager %></td>
+          <td class="col2 c12"><%= park_summary.park_name %></td>
+          <td class="col3 c12"><%= park_summary.park_type %></td>
+          <td class="col4 c5"><%= park_summary.park_service_area %></td>
+          <td class="col5 c12"><%= park_summary.psa_manager %></td>
           <td class="col6"><%= park_summary.email %></td>
           <td class="col7"><%= park_summary.number %></td>
           <td class="col8"><%= park_summary.zipcode %></td>
           <td class="col9"><%= park_summary.acreage %></td>
           <td class="col10"><%= park_summary.sup_dist %></td>
           <td class="col11"><%= park_summary.parkid %></td>
-          <td class="col12"><%= park_summary.location %></td>
+          <td class="col12 c25"><%= park_summary.location %></td>
         </tr>
       <% end %>
     </tbody>

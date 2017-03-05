@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :film_location_summaries
   resources :park_summaries
 
   root        'home#index'

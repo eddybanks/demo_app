@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170228213315) do
+ActiveRecord::Schema.define(version: 20170305065919) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "film_location_summaries", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "release_year"
+    t.string   "locations"
+    t.text     "fun_facts"
+    t.string   "production_company"
+    t.string   "distributor"
+    t.string   "director"
+    t.string   "writer"
+    t.string   "actor1"
+    t.string   "actor2"
+    t.string   "actor3"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "park_summaries", force: :cascade do |t|
     t.string   "park_name"

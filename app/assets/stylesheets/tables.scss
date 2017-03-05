@@ -14,14 +14,17 @@
 .pagination {
   @include font(inherit, 0.7em);
 }
-.col2, .col3 {
+.c12 {
   @include col(12%, scroll);
 }
 
-.col4, .col9, .col10, .col11 {
+.c9 {
+  @include col(9%, scroll);
+}
+.c5 {
   @include col(5%, scroll);
 }
 
-.col12 {
+.c25 {
   @include col(25%, scroll);
 }
