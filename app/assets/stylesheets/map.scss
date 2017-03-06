@@ -1,4 +1,18 @@
 #main-map {
   width: 100%;
-  height: 50em;
+  max-height: 500px;
+  @include box(0, 2%);
+  x-index: -100;
+}
+
+#map-info {
+  text-align: center;
+  @include box(0, 2%, 500px, 20%, 1px);
+  @include font($open_sans_c, 0.4em);
+  @include colors();
+  x-index: 100;
+}
+
+.map-box {
+  @include colors();
 }

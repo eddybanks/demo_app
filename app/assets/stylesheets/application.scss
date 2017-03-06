@@ -9,10 +9,12 @@
 @import 'tables';
 @import 'boxes';
 @import 'search';
+@import 'map';
 
 body, html {
   padding: 0;
   margin: 0;
+  font-size: 1em;
   font-family: $open_sans;
 }
 

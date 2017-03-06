@@ -23,7 +23,7 @@ __You may need to sign up for the website__
 
 `mkdir db/data`
 
-__Download the following files and save them into 'db/data':__
+__Download the following files and save them into 'db/data'. Rename them with the link names shown below:__
 
 _[film_locations.csv](https://data.sfgov.org/api/views/yitu-d5am/rows.csv?accessType=DOWNLOAD)_
 

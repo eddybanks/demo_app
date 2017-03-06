@@ -1,5 +1,4 @@
-.box-lg {
-  @include box(1%, 10%);
+.box {
   text-align: center;
   h1 {
     @include font(inherit, 3em);
@@ -9,4 +8,14 @@
     @include font(fira_sans, 1.5em);
     font-style: italic;
   }
+}
+
+.box-lg {
+  @extend .box;
+  @include box(1%, 10%);
+}
+
+.box-md{
+  @extend .box;
+  @include box(1%, 2%);
 }
