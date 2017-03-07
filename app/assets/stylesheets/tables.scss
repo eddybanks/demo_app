@@ -1,9 +1,9 @@
 .summary-table {
   display: block;
-  height: 42em;
+  height: 40em;
   @include font($dosis, 0.7em);
   tbody {
-    max-height: 40em;
+    max-height: 38em;
     overflow: auto;
   }
   th {

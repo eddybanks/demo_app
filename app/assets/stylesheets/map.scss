@@ -1,16 +1,17 @@
 #main-map {
   width: 100%;
-  min-height: 500px;
+  min-height: inherit;
   @include box(0, 2%);
 }
 
 #map-info {
   text-align: center;
-  @include box(0, 2%, 500px, 20%, 1px);
+  @include box(0, 2%, 100%, 20%, 1px);
   @include font($open_sans_c, 0.4em);
-  @include colors(rgba($black, 0.1), rgba($white, 0.1));
+  @include colors(rgba($black, 0.1), $white);
 }
 
 .map-box {
   @include colors();
+  min-height: 70vh;
 }
