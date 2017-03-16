@@ -29,6 +29,9 @@ gem 'font-awesome-rails'
 gem 'ransack', github: 'activerecord-hackery/ransack'
 gem 'gmaps4rails'
 gem 'underscore-rails'
+gem 'geocoder'
+gem 'graphql'
+gem 'graphiql-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri

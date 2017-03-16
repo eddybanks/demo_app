@@ -15,4 +15,8 @@ Rails.application.routes.draw do
     unlocks: 'users/unlocks'
   }
 
+  if Rails.env.development?
+    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: 'graphql#show'
+  end
+
 end

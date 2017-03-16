@@ -14,4 +14,5 @@ var gmap = function() {
     });
     handler.map.centerOn(marker);
   };
+  
 }
